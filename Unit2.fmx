@@ -1,0 +1,560 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 731
+  ClientWidth = 640
+  Padding.Left = 20.000000000000000000
+  Padding.Top = 20.000000000000000000
+  Padding.Right = 20.000000000000000000
+  Padding.Bottom = 20.000000000000000000
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Bottom
+    Position.X = 20.000000000000000000
+    Position.Y = 672.000000000000000000
+    Size.Width = 600.000000000000000000
+    Size.Height = 39.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 596.000000000000000000
+    Viewport.Height = 35.000000000000000000
+  end
+  object V: TPanel
+    Align = Top
+    Padding.Left = 10.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Padding.Right = 10.000000000000000000
+    Padding.Bottom = 10.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 600.000000000000000000
+    Size.Height = 221.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Layout2: TLayout
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 580.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label3: TLabel
+        Align = Left
+        Size.Width = 73.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = #12503#12525#12501#12449#12452#12523
+        TabOrder = 0
+      end
+      object CbProfile: TComboBox
+        Align = Left
+        Position.X = 73.000000000000000000
+        Size.Width = 168.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnChange = CbProfileChange
+      end
+      object CheckBox1: TCheckBox
+        Align = Right
+        Position.X = 416.000000000000000000
+        Size.Width = 164.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = #12371#12398#12503#12525#12501#12449#12452#12523#12398#32232#38598#12434#35377#21487
+      end
+    end
+    object GroupBox1: TGroupBox
+      Align = Client
+      Padding.Left = 10.000000000000000000
+      Padding.Top = 20.000000000000000000
+      Padding.Right = 10.000000000000000000
+      Padding.Bottom = 10.000000000000000000
+      Size.Width = 580.000000000000000000
+      Size.Height = 176.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'GroupBox1'
+      TabOrder = 1
+      object Layout3: TLayout
+        Align = Top
+        Position.X = 10.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 560.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Layout4: TLayout
+          Align = Left
+          Size.Width = 121.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label1: TLabel
+            Align = Left
+            Size.Width = 49.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            Text = #24133#12288#65306
+            TabOrder = 3
+          end
+          object NbWidth: TNumberBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Left
+            TabOrder = 1
+            Cursor = crIBeam
+            Max = 10000.000000000000000000
+            Value = 1920.000000000000000000
+            Position.X = 49.000000000000000000
+            Size.Width = 41.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            OnChange = ProfileSettingsChange
+          end
+        end
+        object Layout5: TLayout
+          Align = Left
+          Position.X = 121.000000000000000000
+          Size.Width = 264.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Label7: TLabel
+            Align = Left
+            Size.Width = 113.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            Text = #12450#12473#12506#12463#12488#27604#12288#65306#12288'W'
+            TabOrder = 3
+          end
+          object NbAspWid: TNumberBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Left
+            TabOrder = 4
+            Cursor = crIBeam
+            Value = 16.000000000000000000
+            Position.X = 113.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            OnChange = ProfileSettingsChange
+          end
+          object Label5: TLabel
+            Align = Left
+            Position.X = 146.000000000000000000
+            Size.Width = 47.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            Text = #12288#215#12288'H'
+            TabOrder = 5
+          end
+          object NbAspHgt: TNumberBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Left
+            TabOrder = 2
+            Cursor = crIBeam
+            Value = 9.000000000000000000
+            Position.X = 193.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            OnChange = ProfileSettingsChange
+          end
+        end
+        object Layout6: TLayout
+          Align = Left
+          Position.X = 385.000000000000000000
+          Size.Width = 152.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object Label8: TLabel
+            Align = Left
+            Size.Width = 81.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            Text = #35377#23481#35492#24046#12288#65306#12288
+            TabOrder = 0
+          end
+          object NbAllowable: TNumberBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Left
+            TabOrder = 1
+            Cursor = crIBeam
+            Value = 0.100000000000000000
+            ValueType = Float
+            KeyboardType = NumbersAndPunctuation
+            Position.X = 81.000000000000000000
+            Size.Width = 57.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            OnChange = ProfileSettingsChange
+          end
+        end
+      end
+      object Button1: TButton
+        Position.X = 252.000000000000000000
+        Position.Y = 112.000000000000000000
+        TabOrder = 0
+        Text = 'Button1'
+        OnClick = Button1Click
+      end
+      object Layout7: TLayout
+        Align = Top
+        Position.X = 10.000000000000000000
+        Position.Y = 45.000000000000000000
+        Size.Width = 560.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 40
+        object Label9: TLabel
+          Align = Left
+          Size.Width = 120.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Text = #26908#20986#20808#12501#12457#12523#12480
+          TabOrder = 0
+        end
+        object EdSearchDir: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 1
+          Size.Width = 392.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          OnChange = ProfileSettingsChange
+        end
+        object BtSearchDirSel: TButton
+          Align = Right
+          Position.X = 512.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'ellipseseditbutton'
+          TabOrder = 2
+          Text = 'BtSearchDirSel'
+          OnClick = BtSearchDirSelClick
+        end
+      end
+      object Layout8: TLayout
+        Align = Top
+        Position.X = 10.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 560.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 39
+        object Label10: TLabel
+          Align = Left
+          Size.Width = 120.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Text = #31227#21205#20808#12501#12457#12523#12480
+          TabOrder = 0
+        end
+        object EdMoveDir: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 1
+          Size.Width = 392.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          OnChange = ProfileSettingsChange
+        end
+        object BtMoviDirSel: TButton
+          Align = Right
+          ModalResult = 1
+          Position.X = 512.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'ellipseseditbutton'
+          TabOrder = 2
+          Text = 'BtSearchDirSel'
+          OnClick = BtMoviDirSelClick
+        end
+      end
+      object Layout9: TLayout
+        Align = Bottom
+        Position.X = 10.000000000000000000
+        Position.Y = 141.000000000000000000
+        Size.Width = 560.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 41
+        object BtSaveProfile: TButton
+          Align = Right
+          Position.X = 364.000000000000000000
+          Size.Width = 196.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = #29694#22312#12398#35373#23450#12434#12503#12525#12501#12449#12452#12523#12392#12375#12390#20445#23384
+          OnClick = BtSaveProfileClick
+        end
+        object EdProfileName: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Left
+          TabOrder = 3
+          Position.X = 105.000000000000000000
+          Size.Width = 265.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label11: TLabel
+          Align = Left
+          Size.Width = 105.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Text = #26032#35215#12503#12525#12501#12449#12452#12523#21517
+          TabOrder = 4
+        end
+      end
+    end
+  end
+  object Panel1: TPanel
+    Align = Top
+    Padding.Left = 20.000000000000000000
+    Padding.Top = 20.000000000000000000
+    Padding.Right = 20.000000000000000000
+    Padding.Bottom = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 241.000000000000000000
+    Size.Width = 600.000000000000000000
+    Size.Height = 85.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object ProgressBar1: TProgressBar
+      Align = Top
+      Orientation = Horizontal
+      Position.X = 20.000000000000000000
+      Position.Y = 41.000000000000000000
+      Size.Width = 560.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Layout1: TLayout
+      Align = Top
+      Position.X = 20.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 560.000000000000000000
+      Size.Height = 21.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      object Label2: TLabel
+        Align = Left
+        Size.Width = 57.000000000000000000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Finished : '
+        TabOrder = 9
+      end
+      object LbFinished: TLabel
+        Align = Left
+        Position.X = 57.000000000000000000
+        Size.Width = 56.000000000000000000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Trailing
+        Text = '0'
+        TabOrder = 10
+      end
+      object Label4: TLabel
+        Align = Left
+        Position.X = 169.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Total : '
+        TabOrder = 6
+      end
+      object LbTotal: TLabel
+        Align = Left
+        Position.X = 226.000000000000000000
+        Size.Width = 56.000000000000000000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Trailing
+        Text = '0'
+        TabOrder = 8
+      end
+      object Label6: TLabel
+        Align = Left
+        Position.X = 113.000000000000000000
+        Size.Width = 56.000000000000000000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = '/'
+        TabOrder = 7
+      end
+    end
+  end
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 600.000000000000000000
+    Size.Height = 346.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 5
+    TabPosition = PlatformDefault
+    Sizes = (
+      600s
+      320s
+      600s
+      320s
+      600s
+      320s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 68.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #26908#20986#30011#20687
+      ExplicitSize.cx = 68.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object LvPicList: TListView
+        ItemAppearanceClassName = 'TDynamicAppearance'
+        ItemEditAppearanceClassName = 'TDynamicAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 600.000000000000000000
+        Size.Height = 320.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ItemAppearance.ItemHeight = 180
+        ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+          item
+            AppearanceObjectName = 'Text1'
+            AppearanceClassName = 'TTextObjectAppearance'
+            Appearance.Width = 200.000000000000000000
+            Appearance.Align = Trailing
+          end
+          item
+            AppearanceObjectName = 'Image2'
+            AppearanceClassName = 'TImageObjectAppearance'
+            Appearance.Width = 320.000000000000000000
+          end
+          item
+            AppearanceObjectName = 'TextButton3'
+            AppearanceClassName = 'TTextButtonObjectAppearance'
+            Appearance.Width = 50.000000000000000000
+            Appearance.Align = Trailing
+            Appearance.Text = 'Move'
+          end>
+        ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+          item
+            AppearanceObjectName = 'Text1'
+            AppearanceClassName = 'TTextObjectAppearance'
+          end>
+        OnButtonClick = LvPicListButtonClick
+        OnDeleteItem = ListViewDeleteItem
+        AutoTapScroll = True
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 80.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #31227#21205#28168#30011#20687
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object LvMoved: TListView
+        ItemAppearanceClassName = 'TDynamicAppearance'
+        ItemEditAppearanceClassName = 'TDynamicAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 600.000000000000000000
+        Size.Height = 320.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ItemAppearance.ItemHeight = 180
+        ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+          item
+            AppearanceObjectName = 'Text1'
+            AppearanceClassName = 'TTextObjectAppearance'
+            Appearance.Width = 200.000000000000000000
+            Appearance.Align = Trailing
+          end
+          item
+            AppearanceObjectName = 'Image2'
+            AppearanceClassName = 'TImageObjectAppearance'
+            Appearance.Width = 320.000000000000000000
+          end>
+        ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+          item
+            AppearanceObjectName = 'Text1'
+            AppearanceClassName = 'TTextObjectAppearance'
+          end>
+        OnDeleteItem = ListViewDeleteItem
+        AutoTapScroll = True
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 68.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #38500#22806#30011#20687
+      ExplicitSize.cx = 68.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object LvRemoveList: TListView
+        ItemAppearanceClassName = 'TDynamicAppearance'
+        ItemEditAppearanceClassName = 'TDynamicAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 600.000000000000000000
+        Size.Height = 320.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ItemAppearance.ItemHeight = 180
+        ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+          item
+            AppearanceObjectName = 'Text1'
+            AppearanceClassName = 'TTextObjectAppearance'
+            Appearance.Width = 200.000000000000000000
+            Appearance.Align = Trailing
+          end
+          item
+            AppearanceObjectName = 'Image2'
+            AppearanceClassName = 'TImageObjectAppearance'
+            Appearance.Width = 320.000000000000000000
+          end>
+        ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+          item
+            AppearanceObjectName = 'Text1'
+            AppearanceClassName = 'TTextObjectAppearance'
+          end>
+        OnDeleteItem = ListViewDeleteItem
+        AutoTapScroll = True
+      end
+    end
+  end
+end
